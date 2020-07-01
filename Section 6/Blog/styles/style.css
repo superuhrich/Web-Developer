@@ -1,0 +1,36 @@
+.main
+{
+    border: 10px solid #bdc3c7;
+    max-width: 700px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: Source Sans Pro;
+}
+.article
+{
+    margin: 10px;
+}
+h4
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    font-size: 15px;
+    font-weight: 600;
+    color: #3498db;
+}
+p
+{
+    font-weight: 600;
+}
+h2
+{
+    color: #2c3e50;
+    font-size: 25px;
+}
+p:nth-of-type(1)
+{
+    border-left: solid 4px #bdc3c7;
+    padding-left: 3px;
+}

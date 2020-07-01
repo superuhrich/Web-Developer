@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do</title>
+        <style>
+            .done{
+                color: grey;
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Wash Cat</li>
+            <li>Feed Cat</li>
+            <li>Feed Cat to Dog</li>
+        </ul>
+
+
+
+
+        <script>
+
+            var lis = document.querySelectorAll("li");
+
+            lis.forEach(function(each){
+                each.addEventListener("mouseover", function(){
+                    this.style.color = "green";
+                });
+            });
+
+            lis.forEach(function(each){
+                each.addEventListener("mouseout", function(){
+                    this.style.color = "black";
+                })
+            })
+
+            lis.forEach(function(each){
+                each.addEventListener("click", function(){
+                    this.classList.toggle("done")
+                    this.style.color = "black";
+                })
+            })
+        </script>
+    </body>
+</html>
